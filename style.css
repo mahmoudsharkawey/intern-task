@@ -1,185 +1,4 @@
-/* body {
-    font-family: 'Poppins';
-    background-color: #F0F4F8;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    width: 80%;
-    max-width: 1200px;
-    height: 100vh;
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-
-.image-container {
-    flex: 1;
-    background-color: #E8F5E9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container img {
-    width: 80%;
-    height: auto;
-}
-
-.form-container {
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-container h1 {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #000000;
-    font-family: 'Aladin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 49px;
-}
-
-.container-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-logo svg {
-    margin-right: 20px;
-}
-
-.form-container h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #000000;
-    opacity: 0.7;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 51px;
-}
-
-.input-group {
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.input-group label {
-    color: #000000;
-    opacity: 0.7;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 51px;
-}
-
-.input-group input {
-    width: 95%;
-    height: 25px;
-    padding: 10px;
-    border: 2px solid #DDDDDD;
-    border-radius: 10px;
-}
-
-input::placeholder {
-    color: #000000;
-    opacity: 0.5;
-}
-
-.sign-up-button {
-    width: 95%;
-    justify-content: center;
-    padding: 15px;
-    background: #73895D;
-    border-radius: 30px 20px;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.sign-up-button:hover {
-    background-color: #7f916e;
-}
-
-.social-signup {
-    text-align: center;
-}
-
-.social-signup p {
-    margin: 10px 0;
-    color: #000000;
-    opacity: 0.7;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 51px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-
-
-.google-button {
-    color: #FFFFFF;
-}
-
-.facebook-button {
-    color: #FFFFFF;
-}
-
-.apple-button {
-    color: #FFFFFF;
-}
-
-.login-link {
-    font-size: 14px;
-}
-
-.login-link a {
-    color: #73895D;
-    text-decoration: none;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-}
-
-.login-link a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        width: 90%;
-    }
-} */
+/* global styling */
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -202,6 +21,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+
 
 .image-container {
     flex: 1;
@@ -345,6 +165,7 @@ input::placeholder {
 }
 
 /* Responsive Styles */
+
 @media (max-width: 1024px) {
     .container {
         height: auto;
@@ -456,4 +277,39 @@ input::placeholder {
     .social-icons {
         gap: 2px;
     }
+}
+
+/* create the modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+#close-modal {
+    background-color: #4f7e51;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-modal:hover {
+    background-color: #7d907e;
 }
